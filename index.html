@@ -3,9 +3,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Fruit Collector</title>
-        <!-- Optional theme (Bootstrap) -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">      
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -13,46 +12,41 @@
         <div class="jumbotron text-center">
             <h1>Fruit Collector</h1></div>
         
-              <div class="container-fluid">
-                <div class="row">
+              <div class="instructions-container">
+                 <div class="row">
                   <div class="col-sm-12 instructions">
                     <h2>Instructions</h2> 
                     <p>You will be given a random number at the start of the game.</p>
                     <p>There are four fruits below. By clicking on a fruit you will add a specific amount of points to your total score.</p>
                     <p>You win the game by matching your total score to the random number, you lost the game if your total score goes above the random number.</p>
-                    <p>The value of each fruit is hidden from you and its up to you to calculate the correct score.</p>
+                    <p>The value of each fruit is hidden from you and its up to you to calculate the correct score.</p> </div>
                   </div>
                 </div>
         
             <div class="row">
               <div class="col-sm-9">
-                <h2>Score To Match: <span id="winningScore"></span></h2>
+                <h2>Random number given:</h2>
               </div>
             <div class="col-sm-3">
                 <h3>Wins: <span id="wins"></span></h3>
-                <h3 class="text-left">Losses: <span id="losses"></span></h3>
+                <h3>Losses: <span id="losses"></span></h3>
               </div>
             </div>
         
               <div class="row text-center">
                 <div class="col-sm-3">
-                <img src="assets/images/strawberry.png" class="img-thumnail red" alt="Strawberry" width="200" height="200" />
-                </div>
+                <img src="assets/images/strawberry.png" class="img-thumnail strawberry" alt="Strawberry" width="200" height="200"></div>
                 <div class="col-sm-3">
-                <img src="assets/images/lemon.png" class="img-thumbnail blue" alt="Lemon" width="200" height="200" />
-                </div>
+                <img src="assets/images/lemon.png" class="img-thumbnail lemon" alt="Lemon" width="200" height="200"></div>
                 <div class="col-sm-3">
-                <img src="assets/images/watermellon.png" class="img-thumnail yellow" alt="Watermellon" width="200" height="200" />
-                </div>
+                <img src="assets/images/watermellon.png" class="img-thumnail watermellon" alt="Watermellon" width="200" height="200"></div>
                 <div class="col-sm-3">
-                  <img src="assets/images/pineapple.png" class="img-thumnail green" alt="Pineapple" width="200" height="200" />
-                </div>
-              </div>
+                  <img src="assets/images/pineapple.png" class="img-thumnail pineapple" alt="Pineapple" width="200" height="200"></div>
+            </div>
         
             <div class="row">
               <div class="col-sm-12">
-              <h2>Your total score is: <span id="totalScore"></span></h2>
-              </div>
+              <h2>Your total score is: <span id="totalScore"></h2></div>
             </div>
             </div>
         
