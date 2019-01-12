@@ -4,7 +4,7 @@
    var losses = 0;
 
 // Generates random number to guess
-  var Random=Math.floor(Math.random() * 102 + 19);
+  var Random=Math.floor(Math.random() * 120 + 19);
   
 //Generate random number for each fruit
   var fruit1= Math.floor(Math.random() * 12 + 1);
@@ -17,9 +17,9 @@ $('.randomScore').text(Random);
 
 // Reset game
 function reset(){
-  Random=Math.floor(Math.random() * 102 + 19);
+  Random=Math.floor(Math.random() * 120 + 19);
   $('.randomScore').text(Random);
-  fruit1= Math.floor(Math.random() * 12 + 1 );
+  fruit1= Math.floor(Math.random() * 12 + 1);
   fruit2= Math.floor(Math.random() * 12 + 1);
   fruit3= Math.floor(Math.random() * 12 + 1);
   fruit4= Math.floor(Math.random() * 12 + 1);
@@ -27,7 +27,7 @@ function reset(){
   $('#totalScore').text(userTotal);
   } 
 
-// Scoreboard
+// Scoreboard!
 $(document).ready(function(){
   $('#wins').text(wins);
   $('#losses').text(losses);
@@ -46,49 +46,41 @@ alert ("No fruit for you!");
   $('#losses').text(losses);
   reset();
 }
-// Click events
+//Click events
 $('.strawberry').on ('click', function(){
     userTotal = userTotal + fruit1;
-    console.log("New userTotal= " + userTotal);
     $('#totalScore').text(userTotal); 
         if (userTotal == Random){
           winner();
-        }
-        else if ( userTotal > Random){
+        } else if (userTotal > Random){
           loser();
         }   
-  })  
+  }); 
 $('.raspberry').on ('click', function(){
   userTotal = userTotal + fruit2;
-    console.log("New userTotal= " + userTotal);
     $('#totalScore').text(userTotal); 
         if (userTotal == Random){
           winner();
-        }
-        else if ( userTotal > Random){
+        } else if (userTotal > Random){
           loser();
         } 
-  })  
+  });
 $('.watermellon').on ('click', function(){
   userTotal = userTotal + fruit3;
-  console.log("New userTotal= " + userTotal);
     $('#totalScore').text(userTotal);
           if (userTotal == Random){
           winner();
-        }
-        else if ( userTotal > Random){
+        } else if (userTotal > Random){
           loser();
         } 
-  })  
+  });
 
 $('.pineapple').on ('click', function(){
     userTotal = userTotal + fruit4;
-    console.log("New userTotal= " + userTotal);
     $('#totalScore').text(userTotal); 
           if (userTotal == Random){
           winner();
-        }
-        else if ( userTotal > Random){
+        } else if (userTotal > Random){
           loser();
         }
   });   
