@@ -9,47 +9,45 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="jumbotron text-center">
+        <div id="header" class="jumbotron text-center">
             <h1>Fruit Collector</h1></div>
         
               <div class="instructions-container">
+
                  <div class="row">
                   <div class="col-sm-12 instructions">
                     <h2>Instructions</h2> 
-                    <p>You will be given a random number at the start of the game.</p>
-                    <p>There are four fruits below. By clicking on a fruit you will add a specific amount of points to your total score.</p>
-                    <p>You win the game by matching your total score to the random number, you lost the game if your total score goes above the random number.</p>
-                    <p>The value of each fruit is hidden from you and its up to you to calculate the correct score.</p> </div>
-                  </div>
+                    You will be given a random number at the start of the game.<br>
+                    There are four fruits below. By clicking on a fruit you will add a specific amount of points to your total score.<br>
+                    Win the game by matching your total score to the random number, you lost the game if your total score goes above the random number.<br>
+                    The value of each fruit is hidden from you and its up to you to calculate the correct score. </div>
                 </div>
         
-            <div class="row">
+            <div class="row randomscoreboard">
               <div class="col-sm-9">
-                <h2>Random number given:</h2>
+                <h2>Random number given:<span class="randomScore"></span></h2>
               </div>
-            <div class="col-sm-3">
-                <h3>Wins: <span id="wins"></span></h3>
-                <h3>Losses: <span id="losses"></span></h3>
+                            
+                  <div class="col-sm-12">
+                  <h2>Your total score is: <span id="totalScore"></h2>
+                </div>
+                <div class="col-sm-3 scorebox">
+                    <h3>Wins: <span id="wins"></span></h3>
+                    <h3>Losses: <span id="losses"></span></h3>
+                  </div>
               </div>
-            </div>
-        
-              <div class="row text-center">
-                <div class="col-sm-3">
+              
+            <div class="row">
+              <div class="col-sm-3">
                 <img src="assets/images/strawberry.png" class="img-thumnail strawberry" alt="Strawberry" width="200" height="200"></div>
                 <div class="col-sm-3">
-                <img src="assets/images/lemon.png" class="img-thumbnail lemon" alt="Lemon" width="200" height="200"></div>
+                <img src="assets/images/raspberry.png" class="img-thumbnail raspberry" alt="raspberry" width="200" height="200"></div>
                 <div class="col-sm-3">
                 <img src="assets/images/watermellon.png" class="img-thumnail watermellon" alt="Watermellon" width="200" height="200"></div>
                 <div class="col-sm-3">
                   <img src="assets/images/pineapple.png" class="img-thumnail pineapple" alt="Pineapple" width="200" height="200"></div>
             </div>
-        
-            <div class="row">
-              <div class="col-sm-12">
-              <h2>Your total score is: <span id="totalScore"></h2></div>
-            </div>
-            </div>
-        
-        <script src="script.js"></script>
+
+        <script src="assets/script.js"></script>
     </body>
 </html>

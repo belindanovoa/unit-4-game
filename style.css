@@ -1,13 +1,14 @@
-.jumbotron {
+#header {
     background-image: url("assets/images/fruitbackground.jpg");
     background-size: cover;
-    
+    margin-bottom: 5px;
   }
   
   .jumbotron h1 {
     color: #000;
     text-shadow: 3px 3px #fff;
-  
+    margin-top: 100px;
+
   }
   
   .instructions {
@@ -15,10 +16,21 @@
     text-align: center; 
     color: rgb(5, 75, 8);
     text-shadow: 0px 1px #000; 
-    position: relative;
+    padding-top: 0%;
     
+  }
+
+  .randomscoreboard{
+  background-image: url("assets/images/fruitbackground.jpg");
+  background-position: absolute 100px;
+  border-radius: 5px;
   }
   
   .wins {
     text-align: center;
   }
+
+.strawberry{
+  border: 10px;
+}
+
