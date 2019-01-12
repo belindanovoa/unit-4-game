@@ -7,10 +7,10 @@
   var Random=Math.floor(Math.random() * 102 + 19);
   
 //Generate random number for each fruit
-  var num1= Math.floor(Math.random() * 12 + 1);
-  var num2= Math.floor(Math.random() * 12 + 1);
-  var num3= Math.floor(Math.random() * 12 + 1);
-  var num4= Math.floor(Math.random() * 12 + 1);
+  var fruit1= Math.floor(Math.random() * 12 + 1);
+  var fruit2= Math.floor(Math.random() * 12 + 1);
+  var fruit3= Math.floor(Math.random() * 12 + 1);
+  var fruit4= Math.floor(Math.random() * 12 + 1);
 
 //random number
 $('.randomScore').text(Random);
@@ -19,10 +19,10 @@ $('.randomScore').text(Random);
 function reset(){
   Random=Math.floor(Math.random() * 102 + 19);
   $('.randomScore').text(Random);
-  num1= Math.floor(Math.random() * 12 + 1 );
-  num2= Math.floor(Math.random() * 12 + 1);
-  num3= Math.floor(Math.random() * 12 + 1);
-  num4= Math.floor(Math.random() * 12 + 1);
+  fruit1= Math.floor(Math.random() * 12 + 1 );
+  fruit2= Math.floor(Math.random() * 12 + 1);
+  fruit3= Math.floor(Math.random() * 12 + 1);
+  fruit4= Math.floor(Math.random() * 12 + 1);
   userTotal= 0;
   $('#totalScore').text(userTotal);
   } 
@@ -48,7 +48,7 @@ alert ("No fruit for you!");
 }
 // Click events
 $('.strawberry').on ('click', function(){
-    userTotal = userTotal + num1;
+    userTotal = userTotal + fruit1;
     console.log("New userTotal= " + userTotal);
     $('#totalScore').text(userTotal); 
         if (userTotal == Random){
@@ -59,7 +59,7 @@ $('.strawberry').on ('click', function(){
         }   
   })  
 $('.raspberry').on ('click', function(){
-  userTotal = userTotal + num2;
+  userTotal = userTotal + fruit2;
     console.log("New userTotal= " + userTotal);
     $('#totalScore').text(userTotal); 
         if (userTotal == Random){
@@ -70,7 +70,7 @@ $('.raspberry').on ('click', function(){
         } 
   })  
 $('.watermellon').on ('click', function(){
-  userTotal = userTotal + num3;
+  userTotal = userTotal + fruit3;
   console.log("New userTotal= " + userTotal);
     $('#totalScore').text(userTotal);
           if (userTotal == Random){
@@ -82,7 +82,7 @@ $('.watermellon').on ('click', function(){
   })  
 
 $('.pineapple').on ('click', function(){
-    userTotal = userTotal + num4;
+    userTotal = userTotal + fruit4;
     console.log("New userTotal= " + userTotal);
     $('#totalScore').text(userTotal); 
           if (userTotal == Random){
